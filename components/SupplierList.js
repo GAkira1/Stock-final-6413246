@@ -21,7 +21,7 @@ function SupplierList() {
     <div>
       <h1>Suppliers</h1>
       <Link href="/suppliers/new">
-        <a>+New Supplier</a>
+        <button>+New Supplier</button>
       </Link>
       <table>
         <thead>
@@ -40,7 +40,7 @@ function SupplierList() {
               <td>{supplier.phone}</td>
               <td>
                 <Link href={`/suppliers/${supplier._id}`}>
-                  <a>Update</a>
+                  <button>Update</button>
                 </Link>
                 {/* Add the delete functionality */}
               </td>
