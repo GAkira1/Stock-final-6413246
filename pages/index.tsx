@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
-import styles from '../styles/HomePage.module.css';
+import '../styles/HomePage.css';
 
 
 interface Supplier {
@@ -21,12 +21,12 @@ const HomePage: React.FC<HomePageProps> = ({ suppliers }) => {
       <Head>
         <title>Suppliers Management</title>
       </Head>
-      <div className={styles.container}>
+      <div className="container">
         <h1>Suppliers Management System</h1>
         <Link href="/supplier">
           <a>Add New Supplier</a>
         </Link>
-        <table className={styles.table}>
+        <table className="table">
           <thead>
             <tr>
               <th>Supplier Name</th>
@@ -39,7 +39,7 @@ const HomePage: React.FC<HomePageProps> = ({ suppliers }) => {
               <tr key={supplier._id}>
                 <td>
                   <Link href={`/supplier/${supplier._id}`}>
-                    <a className={styles.link}>{supplier.supplierName}</a>
+                    <a className="link">{supplier.supplierName}</a>
                   </Link>
                 </td>
                 <td>{supplier.address}</td>
