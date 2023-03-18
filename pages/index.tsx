@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import styles from '../styles/HomePage.module.css';
 
+
 interface Supplier {
   _id: string;
   supplierName: string;
